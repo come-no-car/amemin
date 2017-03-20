@@ -31,7 +31,7 @@ body {
   padding-bottom: 15px;
   letter-spacing: 2px;
   font-size: 4rem;
-  font-weight: normal;
+  font-weight: nomal;
 }
 .heading::before,
 .heading::after {
@@ -81,7 +81,7 @@ body {
 .heading-sm {
   font-size: 1.5rem;
   text-align: center;
-  font-weight: normal;
+  font-weight: nomal;
 }
 .br-sp {
   display:none;
@@ -99,7 +99,7 @@ body {
   line-height: 50px;
   text-align: center;
 }
-#social-icon i:before { padding: 0; line-height: 50px; }
+#social-icon i:before { padding 0; line-height: 50px; }
 #social-icon .fa-twitter { background: #00a1e9; }
 #social-icon .fa-youtube { background: #CC181E; }
 
@@ -298,6 +298,8 @@ body {
 }
 @media (max-width: 768px) {
   body {
+    background: #151515 url('../images/bg_sp.jpg') no-repeat fixed left bottom;
+    background-size: cover;
     font-size: 1.3rem;
   }
   .heading {
