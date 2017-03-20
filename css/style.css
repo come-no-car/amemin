@@ -13,7 +13,7 @@ body {
   text-align: center;
   font-size: 1.4rem;
   font-family: 'Open Sans', 'Mplus 1p', 'MS PGothic', sans-serif;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 *, *::before, *::after {
@@ -31,7 +31,7 @@ body {
   padding-bottom: 15px;
   letter-spacing: 2px;
   font-size: 4rem;
-  font-weight: lighter;
+  font-weight: normal;
 }
 .heading::before,
 .heading::after {
@@ -81,7 +81,7 @@ body {
 .heading-sm {
   font-size: 1.5rem;
   text-align: center;
-  font-weight: lighter;
+  font-weight: normal;
 }
 .br-sp {
   display:none;
@@ -99,7 +99,7 @@ body {
   line-height: 50px;
   text-align: center;
 }
-#social-icon i:before { padding 0; line-height: 50px; }
+#social-icon i:before { padding: 0; line-height: 50px; }
 #social-icon .fa-twitter { background: #00a1e9; }
 #social-icon .fa-youtube { background: #CC181E; }
 
