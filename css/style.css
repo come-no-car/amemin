@@ -292,7 +292,7 @@ body {
  * -------------------------------- */
 @media (max-width: 1024px) {
   body {
-    background: url('../images/bg_sp.jpg');
+    background: #151515 url('../images/bg_sp.jpg') no-repeat fixed left bottom;
     background-size: cover;
   }
 }
