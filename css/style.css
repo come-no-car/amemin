@@ -99,7 +99,7 @@ body {
   line-height: 50px;
   text-align: center;
 }
-#social-icon i:before { padding 0; line-height: 50px; }
+#social-icon i:before { padding: 0; line-height: 50px; }
 #social-icon .fa-twitter { background: #00a1e9; }
 #social-icon .fa-youtube { background: #CC181E; }
 
@@ -292,14 +292,12 @@ body {
  * -------------------------------- */
 @media (max-width: 1024px) {
   body {
-    background: #151515;
+    background: #151515 url('../images/bg_sp.jpg') no-repeat fixed left bottom;
     background-size: cover;
   }
 }
 @media (max-width: 768px) {
   body {
-    background: #151515 url('../images/bg_sp.jpg') no-repeat fixed left bottom;
-    background-size: cover;
     font-size: 1.3rem;
   }
   .heading {
