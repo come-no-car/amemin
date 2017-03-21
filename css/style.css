@@ -100,7 +100,7 @@ body {
   line-height: 50px;
   text-align: center;
 }
-#social-icon i::before { padding 0; line-height: 50px; }
+#social-icon i::before { padding: 0; line-height: 50px; }
 #social-icon .fa-twitter { background: #00a1e9; }
 #social-icon .fa-youtube { background: #CC181E; }
 
