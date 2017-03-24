@@ -110,6 +110,9 @@ body {
 .header {
   padding: 170px 30px 250px 30px;
 }
+.header-member {
+  padding: 170px 30px 30px 30px;
+}
 .site-title-sub {
   margin: 0 0 30px;
   letter-spacing: 1px;
