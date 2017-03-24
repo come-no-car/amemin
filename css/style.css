@@ -17,6 +17,9 @@ body {
   background: #151515 url('../images/bg.jpg') no-repeat fixed;
   background-size: cover;
 }
+#wrapper-member {
+  background-color: #ee6e73;
+}
 *, *::before, *::after {
   box-sizing: border-box;
 }
