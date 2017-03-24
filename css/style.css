@@ -80,9 +80,9 @@ body {
   width: 100%;
 }
 .heading-sm {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: center;
-  font-weight: nomal;
+  font-weight: lighter;
 }
 .br-sp {
   display:none;
@@ -96,7 +96,7 @@ body {
 #social-icon i {
   width: 50px;
   height: 50px;
-  margin: 0;
+  margin: 0px;
   line-height: 50px;
   text-align: center;
 }
@@ -104,12 +104,11 @@ body {
 #social-icon .fa-twitter { background: #00a1e9; }
 #social-icon .fa-youtube { background: #CC181E; }
 
-
 /* --------------------------------
  * header
  * -------------------------------- */
 .header {
-  padding: 170px 30px 250px;
+  padding: 170px 30px 250px 30px;
 }
 .site-title-sub {
   margin: 0 0 30px;
@@ -144,9 +143,7 @@ body {
  * about
  * -------------------------------- */
 .about {
-  padding: 80px 30px;
-  /*background-color: #fff;*/
-  color: #fff;
+  padding: 113px 0px 100px;
 }
 .about-text {
   margin: 30px 0;
@@ -158,8 +155,7 @@ body {
  * culture
  * -------------------------------- */
 .culture {
-  padding: 80px 30px;
-  /*background-color: #383634;*/
+  padding: 200px 30px;
 }
 .culture-wrapper {
   display: table;
@@ -171,10 +167,6 @@ body {
   width: 400px;
 　overflow: hidden;
 　padding: 15px;
-}
-.culture-image-box {
-  padding-right: 15px;
-  float: left;
 }
 .culture-text-box {
   overflow: hidden;
@@ -287,7 +279,6 @@ body {
   font-size: 1.3rem;
 }
 
-
 /* --------------------------------
  * smart phone
  * -------------------------------- */
@@ -328,7 +319,7 @@ body::before {
   }
   /* --- header --- */
   .header {
-    padding: 120px 30px 20px;
+    padding: 150px 30px 180px;
   }
   .site-title-sub {
     font-size: 1.7rem;
@@ -346,8 +337,7 @@ body::before {
 
   /* --- about --- */
   .about {
-    padding: 80px 30px 0px;
-
+    padding: 0px 30px 150px;
   }
 
   .about-text {
@@ -356,8 +346,7 @@ body::before {
 
   /* --- culture --- */
   .culture {
-    padding: 80px 30px 0px;
-
+    padding: 0px 30px 150px;
   }
   .culture-box {
     display: block;
@@ -377,7 +366,7 @@ body::before {
 
   /* --- photo --- */
   .photo {
-    padding: 80px 30px 0px;
+    padding: 0px 30px 100px;
   }
   .photo-box {
     display: block;
