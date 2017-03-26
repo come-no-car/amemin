@@ -20,17 +20,17 @@ body {
   font-family: 'Open Sans', 'Mplus 1p', 'MS PGothic', sans-serif;
   font-weight: normal;
 }
-#content-member {
+#wrapper {
+  background: #151515 url('../images/bg.jpg') no-repeat fixed;
+  background-size: cover;
+}
+#wrapper-member {
   color: #000;
   text-align: center;
   font-size: 1.4rem;
   font-family: 'Open Sans', 'Mplus 1p', 'MS PGothic', sans-serif;
   font-weight: normal;
-  background-color: #ee6e73;
-}
-#wrapper {
-  background: #151515 url('../images/bg.jpg') no-repeat fixed;
-  background-size: cover;
+  background-color: #fff;
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -120,6 +120,71 @@ a {
 #social-icon i::before { padding: 0; line-height: 50px; }
 #social-icon .fa-twitter { background: #00a1e9; }
 #social-icon .fa-youtube { background: #CC181E; }
+
+/* --モーダルメニュー-- */
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-btn span {
+    color: #000;
+}
+
+.menu-btn span:after {
+    content: attr(data-txt-menu);
+}
+
+.open .menu-btn span:after {
+    content: attr(data-txt-close);
+}
+
+.menu {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu ul {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menu li {
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu li a {
+    display: block;
+    font-size: 18px;
+    color: #000;
+}
+
+.menu li a:hover {
+    color: #999;
+}
+
 
 /* --------------------------------
  * header
@@ -300,6 +365,32 @@ a {
 }
 
 /* --------------------------------
+ * member page
+ * -------------------------------- */
+ .header-member {
+   margin-bottom: 30px;
+ }
+ .member-text {
+   vertical-align: middle;
+   font-size: 1.7rem;
+   line-height: 2;
+   overflow: hidden;
+ }
+ .flexbox{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  height: 100vw; /* ビューポート(幅)を基準に表示高を指定 */
+}
+.item{
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+/* --------------------------------
  * smart phone
  * -------------------------------- */
 @media (max-width: 1024px) {
@@ -321,7 +412,6 @@ a {
     height:100vh;
     background:url('../images/bg_sp.jpg') center/cover no-repeat; /*fixedをトル！*/
     -webkit-background-size:cover;/*Android4*/
-    }
   #content {
     background: #151515 url('../images/bg_sp.jpg') no-repeat fixed center;
     background-size: cover;
@@ -426,5 +516,13 @@ a {
     height: 100%;
     background-size: cover;
     transform: none;
+  }
+  /* --- member page --- */
+  .flexbox{
+    height:220vw;
+  }
+  /* 2カラム */
+  .flexbox .item{
+    width: 50%;
   }
 }
