@@ -11,77 +11,420 @@
   <link rel="apple-touch-icon" href="/icon/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:800i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <!-- drawer.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
+  <!-- jquery & iScroll -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+  <!-- drawer.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
 </head>
-<body>
+<body class="drawer drawer--left">
   <div id="wrapper-member">
-    <header class="header-member">
-      <h1 class="site-title">member</h1>
+    <header id="header-member" role="banner">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-brand" href="#">Brand</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+        </ul>
+      </nav>
+      <h1 class="site-title site-title-common">member</h1>
       <p class="member-text">アメリカ民謡研究会のメンバーです。</p>
     </header>
-      <div id="contents-member">
-        <div class="flexbox">
-          <div class="item"><img src="images/pf/members.jpg"></div>
-          <div class="item"><img src="images/pf/part.jpg"></div>
-          <div class="item"><img src="images/pf/3rd.jpg"></div>
-          <div class="item"><img src="images/pf/pf_02.jpg"></div>
-          <div class="item"><img src="images/pf/pf_03.jpg"></div>
-          <div class="item"><img src="images/pf/pf_04.jpg"></div>
-          <div class="item"><img src="images/pf/pf_05.jpg"></div>
-          <div class="item"><img src="images/pf/pf_06.jpg"></div>
-          <div class="item"><img src="images/pf/pf_07.jpg"></div>
-          <div class="item"><img src="images/pf/pf_08.jpg"></div>
-          <div class="item"><img src="images/pf/pf_09.jpg"></div>
-          <div class="item"><img src="images/pf/pf_10.jpg"></div>
-          <div class="item"><img src="images/pf/pf_11.jpg"></div>
-          <div class="item"><img src="images/pf/pf_12.jpg"></div>
-          <div class="item"><img src="images/pf/pf_13.jpg"></div>
-          <div class="item"><img src="images/pf/pf_14.jpg"></div>
-          <div class="item"><img src="images/pf/pf_15.jpg"></div>
-          <div class="item"><img src="images/pf/pf_16.jpg"></div>
-          <div class="item"><img src="images/pf/pf_17.jpg"></div>
-          <div class="item"><img src="images/pf/pf_18.jpg"></div>
-          <div class="item"><img src="images/pf/pf_19.jpg"></div>
-          <div class="item"><img src="images/pf/pf_20.jpg"></div>
-          <div class="item"><img src="images/pf/pf_21.jpg"></div>
-          <div class="item"><img src="images/pf/pf_22.jpg"></div>
-          <div class="item"><img src="images/pf/pf_23.jpg"></div>
-          <div class="item"><img src="images/pf/pf_24.jpg"></div>
-          <div class="item"><img src="images/pf/pf_25.jpg"></div>
-          <div class="item"><img src="images/pf/pf_26.jpg"></div>
-          <div class="item"><img src="images/pf/pf_27.jpg"></div>
-          <div class="item"><img src="images/pf/pf_28.jpg"></div>
-          <div class="item"><img src="images/pf/pf_29.jpg"></div>
-          <div class="item"><img src="images/pf/pf_30.jpg"></div>
-          <div class="item"><img src="images/pf/pf_31.jpg"></div>
-          <div class="item"><img src="images/pf/pf_32.jpg"></div>
-          <div class="item"><img src="images/pf/pf_33.jpg"></div>
-          <div class="item"><img src="images/pf/pf_34.jpg"></div>
-          <div class="item"><img src="images/pf/pf_35.jpg"></div>
-          <div class="item"><img src="images/pf/pf_36.jpg"></div>
-          <div class="item"><img src="images/pf/pf_37.jpg"></div>
-          <div class="item"><img src="images/pf/pf_38.jpg"></div>
-          <div class="item"><img src="images/pf/pf_39.jpg"></div>
-          <div class="item"><img src="images/pf/pf_40.jpg"></div>
-          <div class="item"><img src="images/pf/pf_41.jpg"></div>
-          <div class="item"><img src="images/pf/pf_42.jpg"></div>
-          <div class="item"><img src="images/pf/pf_43.jpg"></div>
-          <div class="item"><img src="images/pf/pf_44.jpg"></div>
-          <div class="item"><img src="images/pf/pf_45.jpg"></div>
-          <div class="item"><img src="images/pf/pf_46.jpg"></div>
-          <div class="item"><img src="images/pf/pf_47.jpg"></div>
-          <div class="item"><img src="images/pf/pf_48.jpg"></div>
-          <div class="item"><img src="images/pf/pf_49.jpg"></div>
-          <div class="item"><img src="images/pf/pf_50.jpg"></div>
-          <div class="item"><img src="images/pf/pf_51.jpg"></div>
-          <div class="item"><img src="images/pf/pf_52.jpg"></div>
+    <div class="row">
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/pf/members.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2 center-align">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/pf/part.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_02" src="images/pf/pf_02.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_03" src="images/pf/pf_03.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_04" src="images/pf/pf_04.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_05" src="images/pf/pf_05.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_06" src="images/pf/pf_06.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_07" src="images/pf/pf_07.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_08" src="images/pf/pf_08.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_09" src="images/pf/pf_09.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_10" src="images/pf/pf_10.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_11" src="images/pf/pf_11.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_12" src="images/pf/pf_12.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_13" src="images/pf/pf_13.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_14" src="images/pf/pf_14.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_15" src="images/pf/pf_15.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_16" src="images/pf/pf_16.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_17" src="images/pf/pf_17.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_18" src="images/pf/pf_18.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_19" src="images/pf/pf_19.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_20" src="images/pf/pf_20.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_21" src="images/pf/pf_21.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_22" src="images/pf/pf_22.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_23" src="images/pf/pf_23.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_24" src="images/pf/pf_24.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_25" src="images/pf/pf_25.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_26" src="images/pf/pf_26.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_27" src="images/pf/pf_27.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_28" src="images/pf/pf_28.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_29" src="images/pf/pf_29.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_30" src="images/pf/pf_30.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_31" src="images/pf/pf_31.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_32" src="images/pf/pf_32.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_33" src="images/pf/pf_33.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_34" src="images/pf/pf_34.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_35" src="images/pf/pf_35.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_36" src="images/pf/pf_36.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_37" src="images/pf/pf_37.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_38" src="images/pf/pf_38.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_39" src="images/pf/pf_39.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_40" src="images/pf/pf_40.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_41" src="images/pf/pf_41.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_42" src="images/pf/pf_42.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_43" src="images/pf/pf_43.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_44" src="images/pf/pf_44.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_45" src="images/pf/pf_45.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_46" src="images/pf/pf_46.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_47" src="images/pf/pf_47.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_48" src="images/pf/pf_48.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_49" src="images/pf/pf_49.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_50" src="images/pf/pf_50.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_51" src="images/pf/pf_51.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m2">
+        <div class="card">
+          <div class="card-image">
+            <img class="pf_52" src="images/pf/pf_52.jpg">
+          </div>
+        </div>
       </div>
     </div>
-    <footer class="footer">
+    <footer class="footer-band">
         © amemin
     </footer>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/amemin.js"></script>
+  <script>
+      $(document).ready(function() {
+      $('.drawer').drawer();
+    });
+  </script>
 </body>
 </html>
