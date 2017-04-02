@@ -803,7 +803,7 @@ a {
 /* --------------------------------
  * smart phone
  * -------------------------------- */
-@media (max-width: 1024px) {
+@media (max-width: 1024px;) {
   #content {
     background: #151515;
     background-size: cover;
@@ -988,13 +988,9 @@ a {
   .flexbox .item{
     width: 50%;
   }
-}
-
   /* --- live page --- */
-#wrapper-band {
-  border: 7px solid #535196;
-}
-3f;
+  #wrapper-band {
+    border: 7px solid #535196;
   }
   #wrapper-member {
     background-color: #fff;
@@ -1007,9 +1003,8 @@ a {
   .flexbox .item{
     width: 50%;
   }
-}
-
   /* --- live page --- */
-#wrapper-band {
-  border: 7px solid #535196;
+  #wrapper-band {
+    border: 7px solid #535196;
+  }
 }
