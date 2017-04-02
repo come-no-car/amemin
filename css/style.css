@@ -72,7 +72,7 @@ a {
 }
 .button {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 .button::after {
   display: block;
@@ -327,6 +327,8 @@ a {
     background: #151515 url('../images/bg_sp.jpg') no-repeat fixed center;
     background-size: cover;
     font-size: 1.3rem;
+  }
+  #wrapper {
     border: 7px solid #535196;
   }
   #content-member {
@@ -460,7 +462,7 @@ a {
       background-color:#535196;
       overflow:hidden;
       position: fixed;
-      z-index: 3;
+      z-index: 2;
       left: 0;
       bottom: 0;/*"bottom"を"top"に変えることによりヘッダーメニューになります*/
   }
