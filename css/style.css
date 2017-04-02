@@ -441,7 +441,7 @@ a {
   /*gnavi*/
   #gnavi-sp {
   	width:100%;
-  	height: 50px;
+  	height: 40px;
   	border:solid 2px #535196;
   	display:-moz-box;
   	display:-webkit-box;
@@ -471,7 +471,7 @@ a {
   #gnavi-sp > a {
       font-size: 1.2rem;
   	  width:25%;
-      line-height:50px;
+      line-height:40px;
       text-align: center;
       text-decoration: none;
       color: #FFFFFF;
@@ -497,4 +497,9 @@ a {
   .flexbox .item{
     width: 50%;
   }
+}
+
+  /* --- live page --- */
+#wrapper-band {
+  border: 7px solid #535196;
 }
