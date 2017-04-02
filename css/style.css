@@ -326,6 +326,7 @@ a {
   #content {
     background: #151515 url('../images/bg_sp.jpg') no-repeat center;
     background-attachment: fixed;
+    -moz-background-size:cover;
     background-size: cover;
     font-size: 1.3rem;
   }
