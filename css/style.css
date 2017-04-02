@@ -115,47 +115,6 @@ a {
 #social-icon .fa-twitter { background: #00a1e9; }
 #social-icon .fa-youtube { background: #CC181E; }
 
-/*gnavi*/
-#gnavi {
-	width:100%;
-	height: 50px;
-	border:solid 2px #535196;
-	display:-moz-box;
-	display:-webkit-box;
-	display:-webkit-flex;
-	display:-ms-flexbox;
-	display:flex;
-	-moz-box-orient:horizontal;
-	-moz-box-direction:normal;
-	-webkit-box-orient:horizontal;
-	-webkit-direction:normal;
-	-ms-flex-direction:row;
-	-webkit-flex-direction:row;
-	flex-directioln:row;
-	-moz-box-pack:end;
-	-webkit-box-pack:end;
-	-ms-flex-pack:end;
-	-webkit-justify-content:flex-end;
-	justify-content:flex-end;
-    background-color:#535196;
-    overflow:hidden;
-    position: fixed;
-    z-index: 3;
-    left: 0;
-    bottom: 0;/*"bottom"を"top"に変えることによりヘッダーメニューになります*/
-}
-
-#gnavi > a {
-    font-size: 1.2rem;
-	  width:25%;
-    line-height:50px;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
-    border-right: solid 2px #535196;
-}
-/*gnavi*/
-
 /* --------------------------------
  * header
  * -------------------------------- */
@@ -475,6 +434,48 @@ a {
     background-size: cover;
     transform: none;
   }
+
+  /*gnavi*/
+  #gnavi-sp {
+  	width:100%;
+  	height: 50px;
+  	border:solid 2px #535196;
+  	display:-moz-box;
+  	display:-webkit-box;
+  	display:-webkit-flex;
+  	display:-ms-flexbox;
+  	display:flex;
+  	-moz-box-orient:horizontal;
+  	-moz-box-direction:normal;
+  	-webkit-box-orient:horizontal;
+  	-webkit-direction:normal;
+  	-ms-flex-direction:row;
+  	-webkit-flex-direction:row;
+  	flex-directioln:row;
+  	-moz-box-pack:end;
+  	-webkit-box-pack:end;
+  	-ms-flex-pack:end;
+  	-webkit-justify-content:flex-end;
+  	justify-content:flex-end;
+      background-color:#535196;
+      overflow:hidden;
+      position: fixed;
+      z-index: 3;
+      left: 0;
+      bottom: 0;/*"bottom"を"top"に変えることによりヘッダーメニューになります*/
+  }
+
+  #gnavi-sp > a {
+      font-size: 1.2rem;
+  	  width:25%;
+      line-height:50px;
+      text-align: center;
+      text-decoration: none;
+      color: #FFFFFF;
+      border-right: solid 2px #535196;
+  }
+  /*gnavi-sp*/
+
   /* --- member page --- */
   .member-text {
     font-size: 1.2rem;
