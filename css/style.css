@@ -325,7 +325,13 @@ section {
   #content {
   }
   #wrapper {
-    background: url('../images/bg_sp.jpg') center center /cover no-repeat fixed;
+    /*background: url('../images/bg_sp.jpg') center center /cover no-repeat fixed;*/
+    background-image: url('../images/bg_sp.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #47D3DA;
     font-size: 1.5rem;
     border: 7px solid #535196;
   }
