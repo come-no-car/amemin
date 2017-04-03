@@ -9,7 +9,7 @@ html {
 body {
   text-align: center;
   font-size: 1.6rem;
-  font-family: 'Roboto', 'Raleway', 'YuGothic', 'MS PGothic', sans-serif;
+  font-family: 'Roboto', 'YuGothic', 'MS PGothic', sans-serif;
   font-weight: 100;
   line-height: 2.5;
   color: #fff;
@@ -143,7 +143,7 @@ section {
   font-size: 7.6rem;
 }
 .site-title-main {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 .site-title-common {
@@ -325,10 +325,11 @@ section {
   #content {
   }
   #wrapper {
-    background: #151515 url('../images/bg_sp.jpg') no-repeat center;
+    background: url('../images/bg_sp.jpg') center center /cover no-repeat fixed;
+    /*background: #151515 url('../images/bg_sp.jpg') no-repeat center;
     background-attachment: fixed;
     -moz-background-size:cover;
-    background-size: cover;
+    background-size: cover;*/
     font-size: 1.3rem;
     border: 7px solid #535196;
   }
