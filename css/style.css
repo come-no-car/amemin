@@ -323,9 +323,13 @@ section {
 }
 @media (max-width: 768px) {
   #content {
-    background: url('../images/bg_sp.jpg') center center /cover no-repeat fixed;
   }
   #wrapper {
+    background: url('../images/bg_sp.jpg') center center /cover no-repeat fixed;
+    /*background: #151515 url('../images/bg_sp.jpg') no-repeat center;
+    background-attachment: fixed;
+    -moz-background-size:cover;
+    background-size: cover;*/
     font-size: 1.3rem;
     border: 7px solid #535196;
   }
@@ -459,7 +463,7 @@ section {
       position: fixed;
       z-index: 2;
       left: 0;
-      bottom: 0;
+      bottom: 0;/*"bottom"を"top"に変えることによりヘッダーメニューになります*/
   }
 
   #gnavi-sp > a {
