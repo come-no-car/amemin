@@ -245,21 +245,8 @@ section {
   width: 100%;
   table-layout: fixed;
 }
-.social-box {
-  width: 400px;
-　overflow: hidden;
-　padding: 15px;
-}
-.social-box::after {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background: no-repeat;
-  background-size: 100% 100%;
-  opacity: 0.2;
-  transform: scaleY(-1);
+#social-box {
+  margin-bottom: 30px;
 }
 
 /* --------------------------------
@@ -461,23 +448,6 @@ section {
   }
 
   /* --- social --- */
-  .social {
-    padding: 80px 30px 80px;
-  }
-  .social-box {
-    display: block;
-  }
-  .social-image {
-    display: none;
-  }
-  .social-description {
-    position: relative;
-  }
-  .social-box::after {
-    top: 0;
-    height: 100%;
-    transform: none;
-  }
 
   /*gnavi*/
   #gnavi-sp {
