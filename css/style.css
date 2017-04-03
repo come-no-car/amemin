@@ -327,7 +327,6 @@ section {
   #wrapper {
     /*background: url('../images/bg_sp.jpg') center center /cover no-repeat fixed;*/
     background-image: url('../images/bg_sp.jpg');
-    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
