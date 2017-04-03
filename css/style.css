@@ -44,6 +44,8 @@ a {
 }
 .heading-band {
   color: #3f3f3f;
+  font-family: 'YuGothic';
+  font-weight: lighter;
 }
 .heading::before,
 .heading::after {
@@ -64,11 +66,11 @@ section {
 .button {
   display: inline-block;
   width: 120px;
-  margin: 45px 40px 40px;
+  margin: 10px 40px;
   padding: 15px 10px;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   background: transparent;
-  color: #fff;
+  color: #000;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -99,13 +101,13 @@ section {
   font-weight: normal;
 }
 .br-sp {
-  display:none;
+  display: none;
 }
 #social-icon a {
   display: inline-block;
   margin: 0 5px 5px 0;
   padding: 0;
-  color: #fff;
+  color: #3f3f3f;
 }
 #social-icon i {
   width: 50px;
@@ -121,9 +123,6 @@ section {
 /* --------------------------------
  * header
  * -------------------------------- */
-.header {
-  padding: 100px 30px 250px 30px;
-}
 .site-title-sub {
   margin: 0 0 30px;
   letter-spacing: 1px;
@@ -138,18 +137,16 @@ section {
   background-color: #fff;
   vertical-align: middle;
 }
-.site-title {
-  margin: 30px 0 30px;
-  font-size: 7.6rem;
-}
 .site-title-main {
   font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 .site-title-common {
   font-family: 'Roboto', sans-serif;
-  font-weight: normal;
+  font-size: 5rem;
+  font-weight: lighter;
   color: #3f3f3f;
+
 }
 .site-description {
   color: #fff;
@@ -305,12 +302,35 @@ section {
 /* --------------------------------
  * live page
  * -------------------------------- */
- .header-band {
-   padding: 20px 30px 20px 30px;
-   background-color: #fff;
+ .heading-band {
+   color: #3f3f3f;
+   font-family: 'YuGothic';
+   font-weight: normal;
  }
 .footer-band {
   background-color: #fff;
+}
+.text-band {
+  font-size: 1.7rem;
+  line-height: 2;
+  overflow: hidden;
+  color: #3f3f3f;
+}
+.band-l{
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 2.5rem;
+  padding: 0;
+}
+.band-m{
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  padding: 0;
+}
+.band-s{
+  font-size: 1rem;
+  padding: 0;
 }
 /* --------------------------------
  * smart phone
@@ -347,6 +367,22 @@ section {
     font-family: 'YuGothic';
     font-weight: normal;
   }
+  .band-l{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 2.5rem;
+    padding: 0;
+  }
+  .band-m{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  .band-s{
+    font-size: 1rem;
+    padding: 0;
+  }
   .button:hover {
     opacity: 1;
   }
@@ -356,6 +392,9 @@ section {
   /* --- header --- */
   .header {
     padding: 150px 30px 180px;
+  }
+  .header-band {
+    background-color: #fff;
   }
   .site-title-sub {
     font-size: 1.7rem;
@@ -367,8 +406,11 @@ section {
     margin: 10px auto;
   }
   .site-title {
-    margin-top: 35px;
+    display: block;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
     font-size: 5rem;
+    font-weight: lighter;
   }
 
   /* --- about --- */
@@ -507,8 +549,3 @@ section {
   .flexbox .item{
     width: 50%;
   }
-  /* --- live page --- */
-  #wrapper-band {
-    border: 7px solid #535196;
-  }
-}
