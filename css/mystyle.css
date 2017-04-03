@@ -7,26 +7,36 @@ html {
   font-size: 62.5%;
 }
 body {
+  /*color: #fff;
   text-align: center;
   font-size: 1.4rem;
-  font-family: 'Roboto', 'Raleway', 'YuGothic', 'MS PGothic', sans-serif;
-  font-weight: 100;
-  line-height: 2.5;
-  color: #fff;
+  font-family: 'Open Sans', 'Mplus 1p', 'MS PGothic', sans-serif;
+  font-weight: normal;*/
 }
 #content {
-    background: #151515 url('../images/bg.jpg') no-repeat fixed;
-    background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: 'Open Sans', 'Mplus 1p', 'MS PGothic', sans-serif;
+  font-weight: normal;
+}
+#wrapper {
+  background: #151515 url('../images/bg.jpg') no-repeat fixed;
+  background-size: cover;
 }
 #wrapper-member {
+  color: #000;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: 'Open Sans', 'Mplus 1p', 'MS PGothic', sans-serif;
+  font-weight: normal;
   background-color: #fff;
-  border: 14px solid #535196;
 }
 *, *::before, *::after {
   box-sizing: border-box;
 }
 a {
-  color: #535196;
+  color: #ee6e73;
 }
 
 /* --------------------------------
@@ -38,12 +48,8 @@ a {
   margin: 30px 0 15px;
   padding-bottom: 15px;
   letter-spacing: 2px;
-  font-family: 'Roboto', sans-serif;
   font-size: 4rem;
   font-weight: nomal;
-}
-.heading-band {
-  color: #3f3f3f;
 }
 .heading::before,
 .heading::after {
@@ -84,7 +90,7 @@ a {
   width: 0;
   height: 100%;
   margin: 0;
-  background: #535196;
+  background: #C9D525;
   transition: .3s;
 }
 .button:hover::after {
@@ -115,15 +121,71 @@ a {
 #social-icon .fa-twitter { background: #00a1e9; }
 #social-icon .fa-youtube { background: #CC181E; }
 
-/*gnavi*/
+/* --モーダルメニュー-- */
 
-/*gnavi*/
+/*.menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu-btn span {
+    color: #000;
+}
+.menu-btn span:after {
+    content: attr(data-txt-menu);
+}
+.open .menu-btn span:after {
+    content: attr(data-txt-close);
+}
+.menu {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+}
+.menu ul {
+    display: table-cell;
+    vertical-align: middle;
+}
+.menu li {
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+.menu li a {
+    display: block;
+    font-size: 18px;
+    color: #000;
+}
+.menu li a:hover {
+    color: #999;
+}*/
+
 
 /* --------------------------------
  * header
  * -------------------------------- */
 .header {
-  padding: 100px 30px 250px 30px;
+  padding: 170px 30px 250px 30px;
+}
+.header-band {
+  padding: 170px 30px 30px 30px;
 }
 .site-title-sub {
   margin: 0 0 30px;
@@ -142,16 +204,8 @@ a {
 }
 .site-title {
   margin: 30px 0 30px;
-  font-size: 7.6rem;
-}
-.site-title-main {
   font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-}
-.site-title-common {
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
-  color: #3f3f3f;
+  font-size: 7.6rem;
 }
 .site-description {
   color: #fff;
@@ -168,6 +222,11 @@ a {
 .about {
   padding: 113px 0px 100px;
 }
+.about-text {
+  margin: 30px 0;
+  line-height: 2.5;
+}
+
 
 /* --------------------------------
  * culture
@@ -189,45 +248,14 @@ a {
 .culture-text-box {
   overflow: hidden;
 }
-
-.culture-box::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background: no-repeat;
-  background-size: 100% 100%;
-  opacity: 0.2;
-  transform: scaleY(-1);
-}
-/* --------------------------------
- * photo
- * -------------------------------- */
-.photo {
-  padding: 80px 30px;
-  /*background-color: #383634;*/
-}
-.photo-wrapper {
-  display: table;
-  width: 100%;
-  margin-top: 30px;
-  table-layout: fixed;
-}
-.photo-box {
-  width: 400px;
-　overflow: hidden;
-　padding: 15px;
-}
-.photo-image-box {
-  padding-right: 15px;
-  float: left;
-}
-.photo-text-box {
+.culture-text {
+  vertical-align: middle;
+  font-size: 1.2rem;
+  line-height: 2;
   overflow: hidden;
 }
-.photo-box::after {
+
+.culture-box::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -257,6 +285,12 @@ a {
 　overflow: hidden;
 　padding: 15px;
 }
+.social-text {
+  vertical-align: middle;
+  font-size: 1.2rem;
+  line-height: 2;
+  overflow: hidden;
+}
 .social-box::after {
   content: '';
   position: absolute;
@@ -273,13 +307,9 @@ a {
 /* --------------------------------
  * footer
  * -------------------------------- */
-#footer {
+.footer {
   padding: 12px 0;
   font-size: 1.3rem;
-  color: #000;
-}
-.footer-band {
-  color: #3f3f3f;
 }
 
 /* --------------------------------
@@ -289,10 +319,10 @@ a {
    margin-bottom: 30px;
  }
  .member-text {
+   vertical-align: middle;
    font-size: 1.7rem;
    line-height: 2;
    overflow: hidden;
-   color: #3f3f3f;
  }
  .flexbox{
   display: -webkit-flex;
@@ -307,16 +337,88 @@ a {
     width: 25%;
     margin-bottom: 30px;
 }
+
 /* --------------------------------
- * live page
+ * photo page
  * -------------------------------- */
- .header-band {
-   padding: 20px 30px 20px 30px;
+ #photo-wrapper {
+    padding: 20px;
+    background-color: #f6f7fb;
+}
+.photo-header {
+    position: relative;
+    height: 100vh
+}
+.header-heading {
+    margin-bottom: 25px;
+    font-size: 2.4rem
+}
+ .photo-text {
+   vertical-align: middle;
+   font-size: 1.2rem;
+   line-height: 2;
+   overflow: hidden;
+ }
+ /* --------------------------------
+  * item
+  * -------------------------------- */
+ .item {
+   width: 180px;
+   margin-bottom: 4px;
+   padding: 10px;
+   border: 1px solid;
+   border-radius: 5px;
    background-color: #fff;
  }
-.footer-band {
-  background-color: #fff;
-}
+ .item .image {
+   display: block;
+   width: 100%;
+   height: 109px;
+ }
+ .item .category {
+   margin: 15px 9px 10px;
+   color: #aaa;
+   letter-spacing: 1px;
+ }
+ .item .category::before {
+   content: '';
+   display: inline-block;
+   width: 19px;
+   height: 19px;
+   margin-right: 5px;
+   border: 2px solid;
+   border-radius: 50%;
+   vertical-align: -5px;
+ }
+ .item .description {
+   margin: 10px;
+   line-height: 1.5;
+ }
+ .item > a {
+   display: block;
+   margin: -8px -8px -11px;
+   padding: 8px 8px 11px;
+   border-radius: inherit;
+   color: #777;
+   transition: all 0.3s;
+ }
+ .item-column,
+ .item-column .category::before {
+   border-color: #FFF100;
+ }
+ .item-m {
+   width: 350px;
+ }
+ .item-m .image {
+   height: 200px;
+ }
+ .item-l {
+   width: 732px;
+ }
+ .item-l .image {
+   height: 403px;
+ }
+
 /* --------------------------------
  * smart phone
  * -------------------------------- */
@@ -327,11 +429,22 @@ a {
   }
 }
 @media (max-width: 768px) {
+  #wrapper {background:none} /*PC用の背景はオフ*/
+  /*#content::before {
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background:url('../images/bg_sp.jpg') center/cover no-repeat; /*fixedをトル！*/
+    -webkit-background-size:cover;/*Android4*/
   #content {
     background: #151515 url('../images/bg_sp.jpg') no-repeat fixed center;
     background-size: cover;
     font-size: 1.3rem;
-    border: 7px solid #535196;
   }
   #content-member {
     background: #ee6e73
@@ -339,12 +452,7 @@ a {
   }
   .heading {
     margin-top: 20px;
-    font-size: 2.2rem;
-  }
-  .heading-band {
-    color: #3f3f3f;
-    font-family: 'YuGothic';
-    font-weight: lighter;
+    font-size: 2.5rem;
   }
   .button:hover {
     opacity: 1;
@@ -399,25 +507,12 @@ a {
     transform: none;
   }
 
-  /* --- photo --- */
-  .photo {
-    padding: 0px 30px 100px;
-  }
-  .photo-box {
-    display: block;
-  }
-  .photo-image {
-    display: none;
-  }
-  .photo-description {
-    position: relative;
-  }
-  .photo-box::after {
-    top: 0;
-    height: 100%;
-    background-size: cover;
-    transform: none;
-  }
+  /* --- photo page --- */
+  .header-heading {
+        margin-bottom:45px;
+        font-size: 4.8rem;
+        line-height: 1.2
+    }
 
   /* --- social --- */
   .social {
@@ -439,16 +534,6 @@ a {
     transform: none;
   }
   /* --- member page --- */
-  .member-text {
-    font-size: 1.2rem;
-    line-height: 2;
-    overflow: hidden;
-    color: #3f3f3f;
-  }
-  #wrapper-member {
-    background-color: #fff;
-    border: 7px solid #535196;
-  }
   .flexbox{
     height:220vw;
   }
