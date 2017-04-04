@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="立教大学の公認軽音サークル amemin（アメ民）に所属するメンバーををご紹介します。それぞれの担当パートや普段メンバーが聞いているバンドも知ることができます。">
+  <meta name="keywords" content="アメ民, amemin, アメリカ民謡研究会, 立教, 軽音, バンド, サークル, 音楽, ギター, ベース, ドラム, キーボード, カルチャー, 楽器, 春から">
+  <meta name="format-detection" content="telephone=no,address=no,email=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>info</title>
+  <link rel="icon" href="/icon/favicon.ico">
+  <link rel="apple-touch-icon" href="/icon/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:800i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+      <header class="header">
+        <h1 class="site-title black-text">Numbers</h1>
+      </header>
+      <div class="parallax-container">
+        <div class="parallax"><img src="images/live/live_06.jpg"></div>
+      </div>
+      <div class="section white">
+       <div class="row container">
+         <h2 class="text-m black-text">洋楽・邦楽の比率って？</h2>
+         <p class="text-m black-text">全<span class="text-l black-text">201</span>バンド<br><span class="text-s black-text">※春音、秋音、お楽しみ会（SPFバンドバトル以外）は除く</span></p>
+         <p class="text-s black-text">洋楽：<span class="text-l black-text">107</span>バンド  邦楽：<span class="text-l black-text">94</span>バンド</p>
+       </div>
+      </div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="images/live/live_07.jpg"></div>
+      </div>
+      <div class="section white">
+       <div class="row container">
+         <h2 class="text-m black-text">男女比率</h2>
+         <p class="grey-text text-darken-3 lighten-3">Girls：<span class="text-l black-text">42</span>% Boys：<span class="text-l black-text">58</span>%</p>
+         <div class="container-fm">
+           <div>
+             <canvas id="myChart-fm"></canvas>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="images/live/live_08.jpg"></div>
+      </div>
+      <div class="container-inst">
+        <h2 class="text-m black-text">パート比率</h2>
+        <div>
+          <canvas id="myChart-inst"></canvas>
+        </div>
+      </div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="images/live/live_09.jpg"></div>
+      </div>
+      <div class="section white">
+       <div class="row container">
+         <h2 class="text-m black-text">Q.音団連っていうのがいまいち分からない。</h2>
+         <p class="text-s black-text">A.音団連とは、R.F.U、おたまじゃくしの会、ALBION、Over All Music、そして、アメリカ民謡研究会という、5つの公認音楽サークルで構成される団体です。アンプ等の機材の共有をはじめ合同ライブの開催など、互いに助け合いつつ、音楽に関しては好敵手といった、バランスのとれた関係を築いています。それぞれの団体に個性があるので、新入生の方は新歓期などを利用し、各サークルを回ってみることをおすすめします。また一部の団体はウィリアムズホール２階にあるコモンルームをよく利用しているため普段から交流があり、お互いのサークルのライブを覗きに行くこともしばしばあります。音楽の話題はもちろん、大学の講義の情報共有などを通して友達も増えやすいです。</p>
+       </div>
+      </div>
+      <footer id="gnavi-sp">
+        <a href="https://amemin-web.github.io/">amemin</a>
+        <a href="https://amemin-web.github.io/info">info</a>
+        <a href="https://amemin-web.github.io/live">live</a>
+        <a href="https://amemin-web.github.io/member">member</a>
+      </footer>
+  </div>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/chart.js"></script>
+  <script type="text/javascript" src="js/amemin.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+  </script>
+</body>
+</html>
